@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --squidPink: #ff477e;
+  --squidTeal: #98fff1;
+  --darkBg: #0f0f0f;
+  --lightText: #333333; 
+}
+
+.dark {
+  --squidPink: #ff477e;
+  --squidTeal: #98fff1;
+  --darkBg: #ffffff;
+  --lightText: #333333; 
+}
+
+body {
+  background-color: var(--darkBg);
+  color: var(--lightText); 
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+@layer utilities {
+  .glass-effect {
+    background-color: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+  }
+}

@@ -20,6 +20,7 @@ body {
   background-color: var(--darkBg);
   color: var(--lightText); 
   transition: background-color 0.3s, color 0.3s;
+  scrollbar-width: thin;
 }
 
 
@@ -29,4 +30,145 @@ body {
     backdrop-filter: blur(10px); 
     border: 1px solid rgba(255, 255, 255, 0.2); 
   }
+}
+
+
+
+
+/* CSS styles for the loader animations */
+
+/* @keyframes drawCircle {
+  0% {
+    opacity: 0;
+    border-width: 0;
+  }
+  100% {
+    opacity: 1;
+    border-width: 4px;
+  }
+}
+
+@keyframes drawTriangle {
+  0% {
+    opacity: 0;
+    border-left-width: 0;
+    border-bottom-width: 0;
+    border-right-width: 0;
+  }
+  100% {
+    opacity: 1;
+    border-left-width: 32px; 
+    border-bottom-width: 57px; 
+    border-right-width: 32px; 
+  }
+}
+
+@keyframes drawSquare {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.animate-drawCircle {
+  animation: drawCircle 1s forwards 0s;
+}
+
+.animate-drawTriangle {
+  animation: drawTriangle 1s forwards 1s; 
+}
+
+.animate-drawSquare {
+  animation: drawSquare 1s forwards 2s; 
+} */
+
+
+
+
+
+
+
+
+
+
+/* CSS styles for the loader animations */
+
+@keyframes drawCircle {
+  0% {
+    opacity: 0;
+    border-width: 0;
+  }
+  100% {
+    opacity: 1;
+    border-width: 4px;
+  }
+}
+
+@keyframes drawTriangle {
+  0% {
+    opacity: 0;
+    border-left-width: 0;
+    border-bottom-width: 0;
+    border-right-width: 0;
+  }
+  100% {
+    opacity: 1;
+    border-left-width: 32px; /* Same as circle width */
+    border-bottom-width: 57px; /* Adjusted for equal height */
+    border-right-width: 32px; /* Same as circle width */
+  }
+}
+
+@keyframes drawSquare {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Typewriter effect */
+@keyframes typewriter {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.animate-drawCircle {
+  animation: drawCircle 1s forwards 0s;
+}
+
+.animate-drawTriangle {
+  animation: drawTriangle 1s forwards 1s; /* Start after circle */
+}
+
+.animate-drawSquare {
+  animation: drawSquare 1s forwards 2s; /* Start after triangle */
+}
+
+.animate-typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 0;
+  animation: typewriter 2s steps(30) 1s forwards; /* Adjust speed (3s) */
 }

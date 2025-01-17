@@ -1,9 +1,10 @@
 'use client'
 
-import Link from 'next/link'
-import { useState } from 'react'
-import { useTheme } from './ThemeProvider'
-import { Sun, Moon } from 'lucide-react'
+import Link from 'next/link';
+import { useState } from 'react';
+import { useTheme } from './ThemeProvider';
+import { Sun, Moon } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -18,8 +19,11 @@ export default function Navbar() {
     <nav className="bg-white dark:bg-darkBg fixed w-full z-40 transition-colors duration-300 backdrop-blur-sm bg-opacity-80 dark:bg-opacity-80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="text-squidPink text-2xl font-bold hover:scale-105 transition-transform">
-            Hack-n-Win
+          <Link href="/" className="text-squidPink text-2xl font-bold ">
+            {/* Hack-n-Win 2.0 */}
+            {/* <Image src="/logo.png" alt="Hack-n-Win 2.0" width={200} height={50} /> */}
+            <Image src="/logo.png" alt="Hack-n-Win 2.0" width={230} height={70} unoptimized />
+
           </Link>
           
           <div className="md:hidden flex items-center space-x-4">

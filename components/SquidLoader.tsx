@@ -40,7 +40,7 @@ export default function SquidLoader() {
           {/* <h2 className="text-3xl font-bold animate-typewriter dark:text-black light:text-light">
             Hack-<span className='text-squidPink'>N</span>-Win <span className='text-[#3d85c6]'>2.0</span>
           </h2> */}
-          <h2 className="text-3xl font-bold animate-typewriter dark:text-white light:text-black">
+          <h2 className="text-3xl font-bold animate-typewriter dark:text-black light:text-white">
             Hack-<span className='text-squidPink'>N</span>-Win <span className='text-[#3d85c6]'>2.0</span>
           </h2>
         </div>

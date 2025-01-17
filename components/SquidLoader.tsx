@@ -37,6 +37,9 @@ export default function SquidLoader() {
         {/* Title and Subtitle */}
         <div className="text-center">
           <h4 className="text-[#249f9c]">D4 Community Presents</h4>
+          {/* <h2 className="text-3xl font-bold animate-typewriter dark:text-black light:text-light">
+            Hack-<span className='text-squidPink'>N</span>-Win <span className='text-[#3d85c6]'>2.0</span>
+          </h2> */}
           <h2 className="text-3xl font-bold animate-typewriter dark:text-white light:text-black">
             Hack-<span className='text-squidPink'>N</span>-Win <span className='text-[#3d85c6]'>2.0</span>
           </h2>

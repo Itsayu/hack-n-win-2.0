@@ -21,8 +21,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="text-squidPink text-2xl font-bold ">
             {/* Hack-n-Win 2.0 */}
-            {/* <Image src="/logo.png" alt="Hack-n-Win 2.0" width={200} height={50} /> */}
-            <Image src="/logo.png" alt="Hack-n-Win 2.0" width={230} height={70} unoptimized />
+            <Image src="/logo.svg" alt="Hack-n-Win 2.0" width={220} height={70} unoptimized />
 
           </Link>
           

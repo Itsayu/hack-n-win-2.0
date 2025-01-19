@@ -15,6 +15,8 @@ export interface Mentor {
   
   export interface AgendaItem {
     time: string;
+    date: string;
+    miniTitle: string;
     event: string;
     description: string;
   }

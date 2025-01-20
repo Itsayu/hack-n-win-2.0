@@ -25,3 +25,8 @@ export interface Mentor {
     href: string;
     title: string;
   }
+
+  export interface FaqItems {
+    question: string;
+    answer: string;
+  }

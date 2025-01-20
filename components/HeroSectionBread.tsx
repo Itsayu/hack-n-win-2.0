@@ -9,7 +9,7 @@ export default function HeroSectionBread() {
     const { theme } = useTheme();
     const isSmallScreen = useMediaQuery({ query: "(max-width: 768px)" });
     return (
-        <div className="h-[400px] dark:text-squidPink text-black rounded-md border-squidTeal border-2 backdrop-blur-md flex items-center justify-center">
+        <div className="h-[400px] dark:text-squidPink text-black rounded-md dark:border-squidTeal border-squidPink border-2 backdrop-blur-md flex items-center justify-center">
             <div className="flex w-[100%] justify-between items-center p-5">
                 <div className="flex flex-col">
                     <h1 className="text-[35px] text-squidPink font-bold">Hack-N-Win 2.0 | D4 Community</h1>

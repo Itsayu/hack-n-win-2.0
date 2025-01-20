@@ -37,7 +37,7 @@ const agenda: AgendaItem[] = [
 export default function AgendaPage() {
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-24 relative">
-      <div className='sm:grid grid-cols-6 pt-12'>
+      <div className='sm:grid grid-cols-6'>
         <h1 className="text-4xl font-bold dark:text-squidPink text-squidPink py-4 text-center col-span-2">Game Schedule /</h1>
 
         <div className="col-span-4">

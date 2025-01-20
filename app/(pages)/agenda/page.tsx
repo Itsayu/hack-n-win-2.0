@@ -1,3 +1,4 @@
+import HeroSectionBread from '@/components/HeroSectionBread'
 import { AgendaItem } from '@/types'
 import { Clock } from 'lucide-react'
 
@@ -55,8 +56,8 @@ export default function AgendaPage() {
           <div className='dark:text-white text-black'>
             {agenda.map((prop, i) => {
               return (
-                <div className='pt-4'>
-                  <ItemCard time={prop.time} date={prop.date} miniTitle={prop.miniTitle} event={prop.event} description={prop.description} key={i} />
+                <div key={i} className='pt-4'>
+                  <ItemCard time={prop.time} date={prop.date} miniTitle={prop.miniTitle} event={prop.event} description={prop.description}/>
                 </div>
               )
             })}
@@ -68,7 +69,7 @@ export default function AgendaPage() {
 }
 
 
-function ItemCard({ time, date, miniTitle, event, description }: AgendaItem) {
+export function ItemCard({ time, date, miniTitle, event, description }: AgendaItem) {
   return (
     <div className='flex flex-col md:flex-row items-start justify-evenly p-4 py-6 rounded-md dark:border-squidTeal border-squidPink border-[4px] backdrop-blur-md'>
       <div className='flex flex-col gap-1'>

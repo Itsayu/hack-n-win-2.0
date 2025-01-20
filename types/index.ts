@@ -20,3 +20,8 @@ export interface Mentor {
     event: string;
     description: string;
   }
+
+  export interface NavItems {
+    href: string;
+    title: string;
+  }

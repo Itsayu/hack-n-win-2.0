@@ -197,7 +197,7 @@ const PhotoFrame: React.FC = () => {
           <p className="mb-4 dark:text-white light:text-black">Select an Image</p>
           <button
             onClick={triggerFileUpload}
-            className="text-white px-6 py-3 bg-squidPink rounded-full border-2 light:border-black dark:border-white flex items-center gap-2 hover:bg-pink-700"
+            className="text-white px-6 py-3 bg-squidPink rounded-full border-[1px] light:border-black dark:border-white flex items-center gap-2 hover:bg-pink-700"
           >
             Upload Image
           </button>
@@ -212,7 +212,7 @@ const PhotoFrame: React.FC = () => {
 
         <div>
           <p className="mb-4 dark:text-white light:text-black">Image Shape</p>
-          <div className="flex gap-1 border-2 light:border-black dark:border-white rounded-full p-1 w-fit dark:text-white light:text-black">
+          <div className="flex gap-1 border-[1px] light:border-black dark:border-white rounded-full p-1 w-fit dark:text-white light:text-black">
             {(["original", "square", "circle"] as const).map((shape) => (
               <button
                 key={shape}
@@ -221,7 +221,7 @@ const PhotoFrame: React.FC = () => {
                   selectedShape === shape
                     ? "bg-gray-200"
                     : "hover:bg-gray-100"
-                } transition-colors`}
+                } transition-colors hover:dark:bg-gray-400`}
               >
                 {shape}
               </button>

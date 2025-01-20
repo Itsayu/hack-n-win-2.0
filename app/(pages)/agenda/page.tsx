@@ -69,7 +69,7 @@ export default function AgendaPage() {
 }
 
 
-export function ItemCard({ time, date, miniTitle, event, description }: AgendaItem) {
+function ItemCard({ time, date, miniTitle, event, description }: AgendaItem) {
   return (
     <div className='flex flex-col md:flex-row items-start justify-evenly p-4 py-6 rounded-md dark:border-squidTeal border-squidPink border-[4px] backdrop-blur-md'>
       <div className='flex flex-col gap-1'>

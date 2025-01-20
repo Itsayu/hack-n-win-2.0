@@ -15,6 +15,18 @@ export interface Mentor {
   
   export interface AgendaItem {
     time: string;
+    date: string;
+    miniTitle: string;
     event: string;
     description: string;
+  }
+
+  export interface NavItems {
+    href: string;
+    title: string;
+  }
+
+  export interface FaqItems {
+    question: string;
+    answer: string;
   }

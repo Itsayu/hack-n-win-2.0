@@ -40,7 +40,7 @@ export default function Navbar() {
   }]
 
   return (
-    <nav className="bg-white dark:bg-darkBg fixed w-full z-40 transition-colors duration-300 backdrop-blur-sm bg-opacity-80 dark:bg-opacity-80">
+    <nav className="bg-white dark:bg-darkBg fixed w-full z-40 transition-colors duration-300 backdrop-blur-sm bg-opacity-80 dark:bg-opacity-60 shadow-md dark:shadow-squidPink/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between gap-2 h-16">
           <Link href="/" className="text-squidPink text-2xl font-bold ">

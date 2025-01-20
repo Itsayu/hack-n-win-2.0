@@ -273,7 +273,7 @@ function TimelineCard({ time, date, miniTitle, event, description, isLeft }: Age
             <div className="inline-block px-3 py-1 rounded-full bg-squidTeal/20 text-squidTeal text-sm font-medium">
               {miniTitle}
             </div>
-            <h3 className="text-2xl font-bold text-squidPink group-hover:text-white transition-colors duration-300">
+            <h3 className="text-2xl font-bold text-squidPink transition-colors duration-300">
               {event}
             </h3>
           </div>
@@ -284,19 +284,26 @@ function TimelineCard({ time, date, miniTitle, event, description, isLeft }: Age
           </div>
 
           {/* Hover Arrow */}
-          <div className={`absolute top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300
+          {/* <div className={`absolute top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300
             ${isLeft ? 'left-4' : 'right-4'}`}>
             <ArrowRight className={`w-6 h-6 text-squidPink transform ${isLeft && 'rotate-180'}`} />
-          </div>
+          </div> */}
         </div>
       </div>
 
       {/* Timeline dot */}
-      <div className="absolute top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-squidPink 
+      {/* <div className="absolute top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-squidPink 
            group-hover:scale-125 transition-transform duration-300
-           md:left-auto md:right-0 md:translate-x-1/2"
+           md:left-auto md:right-0 "
            style={{ [isLeft ? 'right' : 'left']: '-12px' }}>
-      </div>
+      </div> */}
+      <div 
+  className={`absolute top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-squidPink 
+             group-hover:scale-125 transition-transform duration-300
+             hidden md:block md:left-auto md:right-0`}
+  style={{ [isLeft ? 'right' : 'left']: '-12px' }}>
+</div>
+
     </div>
   );
 }

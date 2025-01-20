@@ -9,11 +9,12 @@ export default function HeroSectionBread() {
     const { theme } = useTheme();
     const isSmallScreen = useMediaQuery({ query: "(max-width: 768px)" });
     return (
-        <div className="h-[400px] dark:text-squidPink text-black rounded-md dark:border-squidTeal border-squidPink border-2 backdrop-blur-md flex items-center justify-center">
-            <div className="flex w-[100%] justify-between items-center p-5">
+        <div className="h-[360px] dark:text-squidPink text-black dark:border-squidTeal border-squidPink border-[0.001px] backdrop-blur-md flex items-center justify-center ">
+        {/* // <div className="h-[400px] dark:text-squidPink text-black rounded-md dark:border-squidTeal border-squidPink border-2 backdrop-blur-md flex items-center justify-center"> */}
+            <div className="flex md:flex-row w-[100%] justify-between items-center p-5 flex-col gap-5">
                 <div className="flex flex-col">
-                    <h1 className="text-[35px] text-squidPink font-bold">Hack-N-Win 2.0 | D4 Community</h1>
-                    <p className="font-medium dark:text-gray-200 text-black">Hack-N-Win <span className="text-squidPink w-[500px]">{usePathname().toUpperCase()}</span></p>
+                    <h1 className="text-[32px] text-squidPink font-bold md:text-start text-center">Hack-N-Win 2.0 | D4 Community</h1>
+                    <p className="font-small dark:text-gray-200 text-black md:text-start text-center">Hack-N-Win <span className="text-squidPink w-[500px]">{usePathname().toUpperCase()}</span></p>
                 </div>
                 <div>
                     <Image
@@ -22,7 +23,7 @@ export default function HeroSectionBread() {
                         width={isSmallScreen ? 300 : 390}
                         height={isSmallScreen ? 100 : 150}
                         unoptimized
-                        className="md:block hidden"
+                        // className="md:block hidden"
                     />
                 </div>
             </div>

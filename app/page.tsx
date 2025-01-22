@@ -78,7 +78,7 @@ export default function Home() {
             </a>
             <a
               href="/agenda"
-              className="border-2 border-squidTeal dark:text-squidTeal px-8 py-3 rounded-lg hover:bg-squidTeal hover:text-white light:text-black"
+              className="border-2 border-squidTeal dark:text-squidTeal px-8 py-3 rounded-lg hover:bg-squidPink hover:text-white light:text-black"
             >
               View Schedule
             </a>

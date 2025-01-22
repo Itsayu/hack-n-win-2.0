@@ -41,12 +41,12 @@ export default function Home() {
           <p className="text-xl md:text-2xl dark:text-white light:text-black mb-8 pb-4 font-bold">
             Will you survive the ultimate coding{" "}
             <span className="relative inline-block pb-4">
-              <span className="z-10 animate-pulse text-3xl relative bg-gradient-to-r from-squidPink via-purple-500 to-squidTeal bg-clip-text text-transparent">
+              <span className="z-10 animate-pulse text-3xl relative bg-gradient-to-r from-squidPink via-purple-500 to-squidTeal bg-clip-text text-transparent w-[250px]">
                 {words[currentWordIndex]}
               </span>
               {/* Wavy underline with multiple colors */}
               <span
-                className="absolute bottom-0 left-0 w-full h-[23px] -z-10 pb-4"
+                className="absolute bottom-0 left-0 w-full h-[23px] z-10 pb-4"
                 style={{
                   background: `repeating-linear-gradient(
                     90deg,
@@ -69,16 +69,16 @@ export default function Home() {
             <span>?</span>
           </p>
 
-          <div className="space-x-4">
+          <div className="md:flex-row flex-col flex justify-center items-center gap-5">
             <a
               href="/teams"
-              className="bg-squidPink text-white px-8 py-3 rounded-lg hover:bg-pink-700"
+              className="bg-squidPink text-white px-8 py-3 rounded-lg hover:bg-pink-700 w-[230px]"
             >
               Join Game
             </a>
             <a
               href="/agenda"
-              className="border-2 border-squidTeal dark:text-squidTeal px-8 py-3 rounded-lg hover:bg-squidPink hover:text-white light:text-black"
+              className="border-2 border-squidTeal dark:text-squidTeal px-8 py-3 rounded-lg hover:bg-squidPink hover:text-white light:text-black w-[230px]"
             >
               View Schedule
             </a>

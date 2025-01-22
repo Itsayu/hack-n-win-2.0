@@ -10,7 +10,7 @@ export default function Home() {
   const isSmallScreen = useMediaQuery({ query: "(max-width: 768px)" });
 
   // Words to rotate
-  const words = ["challenge", "test", "trial", "experiment", "adventure", "quest", "feat"];
+  const words = ["Challenge", "Test", "Trial", "Experiment", "Adventure", "Quest", "Feat"];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
   // Rotate words every 1.5 seconds
@@ -41,7 +41,7 @@ export default function Home() {
           <p className="text-xl md:text-2xl dark:text-white light:text-black mb-8 pb-4 font-bold">
             Will you survive the ultimate coding{" "}
             <span className="relative inline-block pb-4">
-              <span className="z-10 animate-pulse bg-gradient-to-r from-squidPink via-purple-500 to-squidTeal bg-clip-text text-transparent">
+              <span className="z-10 animate-pulse font-xl bg-gradient-to-r from-squidPink via-purple-500 to-squidTeal bg-clip-text text-transparent">
                 {words[currentWordIndex]}
               </span>
               {/* Wavy underline with multiple colors */}

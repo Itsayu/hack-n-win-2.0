@@ -54,11 +54,6 @@ export default function Home() {
                     #6b21a8,
                     #14a2b8
                   )`,
-                  // maskImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="8" viewBox="0 0 100 8"><path fill="none" stroke="black" stroke-width="2" d="M0,4 Q25,0 50,4 T100,4"></path></svg>')`,
-                  // WebkitMaskImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="8" viewBox="0 0 100 8"><path fill="none" stroke="black" stroke-width="2" d="M0,4 Q25,0 50,4 T100,4"></path></svg>')`,
-                  // maskRepeat: "repeat-x",
-                  // WebkitMaskRepeat: "repeat-x",
-
                   maskImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="12" viewBox="0 0 100 12"><path fill="none" stroke="black" stroke-width="5" d="M0,5 Q25,0 50,5 T100,5"></path></svg>')`,
                   WebkitMaskImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="12" viewBox="0 0 100 12"><path fill="none" stroke="black" stroke-width="5" d="M0,5 Q25,0 50,5 T100,5"></path></svg>')`,
                   maskRepeat: "repeat-x",
@@ -66,12 +61,12 @@ export default function Home() {
                 }}
               ></span>
             </span>
-            <span>?</span>
+            <span className="text-3xl">?</span>
           </p>
 
-          <div className="md:flex-row flex-col flex justify-center items-center gap-5">
+          <div className="sm:flex-row flex-col flex justify-center items-center gap-5">
             <a
-              href="/teams"
+              href="https://hacknwin-2-0.devfolio.co/"
               className="bg-squidPink text-white px-8 py-3 rounded-lg hover:bg-pink-700 w-[230px]"
             >
               Join Game

@@ -30,6 +30,9 @@ export default function Navbar() {
     href: "/teams",
     title: "Team"
   }, {
+    href: "/partners",
+    title: "Partners"
+  }, {
     href: "/profile-badge",
     title: "Get Profile Badge"
   }, {

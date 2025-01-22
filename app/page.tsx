@@ -41,7 +41,7 @@ export default function Home() {
           <p className="text-xl md:text-2xl dark:text-white light:text-black mb-8 pb-4 font-bold">
             Will you survive the ultimate coding{" "}
             <span className="relative inline-block pb-4">
-              <span className="z-10 animate-pulse font-xl bg-gradient-to-r from-squidPink via-purple-500 to-squidTeal bg-clip-text text-transparent">
+              <span className="z-10 animate-pulse text-2xl bg-gradient-to-r from-squidPink via-purple-500 to-squidTeal bg-clip-text text-transparent">
                 {words[currentWordIndex]}
               </span>
               {/* Wavy underline with multiple colors */}

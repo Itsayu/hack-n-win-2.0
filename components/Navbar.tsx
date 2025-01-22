@@ -6,15 +6,16 @@ import { useTheme } from './ThemeProvider';
 import { Sun, Moon } from 'lucide-react';
 import Image from 'next/image';
 import { NavItems } from '@/types';
+import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
-  const { theme, toggleTheme } = useTheme()
+  const [isOpen, setIsOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
+  const pathname = usePathname();
 
-  // New function to handle mobile link clicks
   const handleMobileClick = () => {
-    setIsOpen(false)
-  }
+    setIsOpen(false);
+  };
 
   const navLinks: NavItems[] = [{
     href: "/",
@@ -37,16 +38,14 @@ export default function Navbar() {
   }, {
     href: "/faqs",
     title: "FAQs"
-  }]
+  }];
 
   return (
     <nav className="bg-white dark:bg-darkBg fixed w-full z-40 transition-colors duration-300 backdrop-blur-sm bg-opacity-80 dark:bg-opacity-60 shadow-md dark:shadow-squidPink/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between gap-2 h-16">
-          <Link href="/" className="text-squidPink text-2xl font-bold ">
-            {/* Hack-n-Win 2.0 */}
-            <Image src="/logo.svg" alt="Hack-n-Win 2.0" width={220} height={70} unoptimized quality={100} className='max-w-[220px]' />
-
+          <Link href="/" className="text-squidPink text-2xl font-bold">
+            <Image src="/logo.svg" alt="Hack-n-Win 2.0" width={220} height={70} unoptimized quality={100} className="max-w-[220px]" />
           </Link>
 
           <div className="lg:hidden flex items-center space-x-4">
@@ -72,9 +71,22 @@ export default function Navbar() {
 
           <div className="hidden lg:flex items-center space-x-8">
             {navLinks.map((prop, i) => {
+              const isActive = pathname === prop.href;
               return (
-                <Link href={prop.href} className="text-gray-800 dark:text-white hover:text-squidPink dark:hover:text-squidPink transition-colors" key={i}>{prop.title}</Link>
-              )
+                <Link 
+                  href={prop.href} 
+                  className={`
+                    relative text-gray-800 dark:text-white hover:text-squidPink dark:hover:text-squidPink transition-colors
+                    before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 
+                    before:bg-squidPink before:transition-all before:duration-300
+                    hover:before:w-full
+                    ${isActive ? 'before:w-full' : ''}
+                  `} 
+                  key={i}
+                >
+                  {prop.title}
+                </Link>
+              );
             })}
             <button
               onClick={toggleTheme}
@@ -89,14 +101,28 @@ export default function Navbar() {
           <div className="lg:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 flex flex-col items-end gap-5 font-light">
               {navLinks.map((prop, i) => {
+                const isActive = pathname === prop.href;
                 return (
-                  <Link href={prop.href} onClick={handleMobileClick} className="text-gray-800 dark:text-white hover:text-squidPink dark:hover:text-squidPink transition-colors" key={i}>{prop.title}</Link>
-                )
+                  <Link 
+                    href={prop.href} 
+                    onClick={handleMobileClick} 
+                    className={`
+                      relative text-gray-800 dark:text-white hover:text-squidPink dark:hover:text-squidPink transition-colors
+                      before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 
+                      before:bg-squidPink before:transition-all before:duration-300
+                      hover:before:w-full
+                      ${isActive ? 'before:w-full' : ''}
+                    `}
+                    key={i}
+                  >
+                    {prop.title}
+                  </Link>
+                );
               })}
             </div>
           </div>
         )}
       </div>
     </nav>
-  )
+  );
 }

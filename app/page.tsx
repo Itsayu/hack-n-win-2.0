@@ -126,9 +126,9 @@ export default function Home() {
   const eventDate = new Date("2024-03-01T00:00:00");
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
+    hrs: 0,
+    min: 0,
+    sec: 0,
   });
 
   // Rotate words every 1.5 seconds

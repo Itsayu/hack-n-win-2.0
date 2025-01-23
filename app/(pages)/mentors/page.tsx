@@ -23,9 +23,18 @@ export default function MentorsPage() {
   const closeModal = () => setSelectedMentor(null);
 
   return (
-    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-24 relative">
-      <h1 className="text-4xl font-bold text-center text-squidPink mb-12">Game Masters</h1>
-
+    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative">
+      {/* <h1 className="text-4xl font-bold text-center text-squidPink mb-12">Game Masters</h1> */}
+      
+        {/* Header */}
+        <div className="mb-16">
+          <h1 className="text-4xl md:text-5xl font-bold text-center">
+            <span className="bg-gradient-to-r from-squidPink via-purple-500 to-squidTeal bg-clip-text text-transparent">
+              Game Masters
+            </span>
+          </h1>
+          <div className="h-1 w-32 mx-auto mt-4 bg-gradient-to-r from-squidPink to-squidTeal rounded-full"></div>
+        </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {mentors.map((mentor, index) => (
           <div 

@@ -311,7 +311,7 @@ function TimelineCard({ time, date, miniTitle, event, description, isLeft }: Age
 export default function AgendaPage() {
   return (
     <main className="min-h-screen">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Header */}
         <div className="mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-center">

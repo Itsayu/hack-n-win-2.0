@@ -54,7 +54,7 @@ export default function FaqsPage() {
 
     return (
         <div className="min-h-screen">
-            <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-24 relative">
+            <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative">
                 {/* Header Section */}
                 <div className="text-center mb-16">
                     <h1 className="text-4xl md:text-5xl font-bold">

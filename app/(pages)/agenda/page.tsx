@@ -255,10 +255,10 @@ function TimelineCard({ time, date, miniTitle, event, description, isLeft }: Age
     <div className={`group relative flex w-full md:w-1/2 ${isLeft ? 'md:justify-end md:pr-8' : 'md:ml-auto md:pl-8'}`}>
       {/* Card Content */}
       <div className={`w-full transform transition-all duration-300 group-hover:scale-105 ${isLeft ? 'md:text-right' : ''}`}>
-        <div className="bg-white/5 backdrop-blur-lg rounded-xl border border-squidTeal/50 p-6 hover:border-squidPink/50 transition-colors duration-300">
+        <div className="bg-white/5 backdrop-blur-lg rounded-xl border dark:border-squidTeal/50 border-squidPink/50 p-6 hover:border-squidPink/50 transition-colors duration-300">
           {/* Header */}
           <div className={`flex flex-wrap gap-4 mb-4 ${isLeft ? 'md:justify-end' : ''}`}>
-            <div className="flex items-center space-x-2 text-squidTeal">
+            <div className="flex items-center space-x-2 dark:text-squidTeal text-black">
               <Clock className="w-5 h-5 animate-pulse" />
               <span className="font-mono">{time}</span>
             </div>
@@ -270,7 +270,7 @@ function TimelineCard({ time, date, miniTitle, event, description, isLeft }: Age
 
           {/* Title Section */}
           <div className={`space-y-2 ${isLeft ? 'md:flex md:flex-col md:items-end' : ''}`}>
-            <div className="inline-block px-3 py-1 rounded-full bg-squidTeal/20 text-squidTeal text-sm font-medium">
+            <div className="inline-block px-3 py-1 rounded-full bg-squidPink/20 text-squidPink text-sm font-medium">
               {miniTitle}
             </div>
             <h3 className="text-2xl font-bold text-squidPink transition-colors duration-300">
@@ -280,7 +280,7 @@ function TimelineCard({ time, date, miniTitle, event, description, isLeft }: Age
 
           {/* Description */}
           <div className="mt-4">
-            <p className="text-gray-300 leading-relaxed">{description}</p>
+            <p className="dark:text-gray-300 text-black leading-relaxed">{description}</p>
           </div>
 
           {/* Hover Arrow */}

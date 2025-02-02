@@ -7,38 +7,69 @@ import Image from "next/image";
 
 const team: Mentor[] = [
     {
-        name: "Ayush Anshu",
-        expertise: "Nigadga Engineer",
-        designation: "Web Team Lead",
-        bio: "Frontman is a software Engineer by profession having 4+ years of experience in the corporate field. Learning new technology and implementing them is his goal. Along with his daily life, he also tries to give back to society by sharing information with peers.",
-        image: "/team/naruto.png",
-        linkedin: "https://linkedin.com/in/Frontman"
+        name: "Dhairya Ahuja",
+        expertise: "Java developer ",
+        designation: "Social Media Team Lead",
+        bio: "Java Developer",
+        image: "/team/dhairya.png",
+        connect: "https://www.linkedin.com/in/dhairya-ahuja-1b3b74286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     {
         name: "Ayush Anshu",
-        expertise: "Niggadsa Engineer",
+        expertise: "Web Developer",
         designation: "Web Team Lead",
-        bio: "Frontman is a software Engineer by profession having 4+ years of experience in the corporate field. Learning new technology and implementing them is his goal. Along with his daily life, he also tries to give back to society by sharing information with peers.",
-        image: "/team/naruto.png",
-        linkedin: "https://linkedin.com/in/Frontman"
+        bio: "your friendly neighborhood web developer",
+        image: "/team/ayushanshu.png",
+        connect: "https://portfolio-ayush24k.vercel.app/"
     },
     {
-        name: "Ayush Anshu",
-        expertise: "Nasa Engineer",
-        designation: "Web Team Lead",
-        bio: "Frontman is a software Engineer by profession having 4+ years of experience in the corporate field. Learning new technology and implementing them is his goal. Along with his daily life, he also tries to give back to society by sharing information with peers.",
-        image: "/team/naruto.png",
-        linkedin: "https://linkedin.com/in/Frontman"
+        name: "Devansh Srivastava",
+        expertise: "DSA",
+        designation: "Management Lead",
+        bio: "Devansh is a passionate and self-motivated individual currently in the final year of graduation, with a strong foundation in Python and experience working with NoSQL databases. Proficient in Python frameworks like Django, with hands-on knowledge of PHP and other backend technologies. Currently serving as the Management Lead at D4 Community, showcasing strong managerial skills and driving initiatives focused on community growth and collaboration. A keen learner with a curiosity to explore and adapt to new technologies, driven to solve problems and build efficient solutions.",
+        image: "/team/devansh.png",
+        connect: "www.linkedin.com/in/devansh-srivastava-95a343204"
     },
     {
-        name: "Ayush Andfs",
-        expertise: "adas Engineer",
-        designation: "Web Team Lead",
-        bio: "Frontman is a software Engineer by profession having 4+ years of experience in the corporate field. Learning new technology and implementing them is his goal. Along with his daily life, he also tries to give back to society by sharing information with peers.",
-        image: "/team/naruto.png",
-        linkedin: "https://linkedin.com/in/Frontman"
+        name: "Bhumika Varshney",
+        expertise: "DSA",
+        designation: "Social Media Team Lead",
+        bio: "A passionate and motivated second-year B.Tech Computer Science student with fundamental skills inprogramming and a keen interest in software engineering, seeking an internship opportunity in Google's STEP program to further develop technical skills and gain hands-on experience in software developm",
+        image: "/team/bhumika.png",
+        connect: "https://www.linkedin.com/in/bhumika-varshney-90ba64295"
     },
-    
+    {
+        name: "Mukul",
+        expertise: "Web Development",
+        designation: "Web Dev co-lead",
+        bio: "A passionate tech enthusiast skilled in React.js, problem-solving in C++, and exploring the realms of AI and ML.Driven to innovate, learn, and contribute to the tech community through impactful projects and solutions.",
+        image: "/team/mukul.png",
+        connect: "https://www.linkedin.com/in/cloudmukul?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+        name: "Qazi Zaid",
+        expertise: "Graphic Designing",
+        designation: "Graphic Team Lead",
+        bio: "A passionate tech enthusiast skilled in React.js, problem-solving in C++, and exploring the realms of AI and ML.Driven to innovate, learn, and contribute to the tech community through impactful projects and solutions.",
+        image: "/team/default.png",
+        connect: "https://www.linkedin.com/in/cloudmukul?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+        name: "Bhargav Reddy",
+        expertise: "Web Development",
+        designation: "Web Team",
+        bio: "I’m Bijjam Madhana Bhargav Reddy, a third-year Computer Science Engineering student at Chandigarh University and a Core Team Member of the D4 Community since September 2023. As a web developer, I specialize in creating user-centric and innovative web solutions using the MERN stack and modern design tools.",
+        image: "/team/bhargav.png",
+        connect: "https://www.linkedin.com/in/bijjam-madhana-bhargav-reddy-087806249"
+    },
+    {
+        name: "Devishi Aggarwal ",
+        expertise: "",
+        designation: "Campus Lead CU",
+        bio: "Campus lead of D4 community , CU",
+        image: "/team/devishi.png",
+        connect: "https://www.linkedin.com/in/devishiaggarwal"
+    },
     // Add more mentors as needed
 ];
 
@@ -54,7 +85,7 @@ export default function TeamsPage() {
                 <div className="mb-16">
                     <h1 className="text-4xl md:text-5xl font-bold text-center">
                         <span className="bg-gradient-to-r from-squidPink via-purple-500 to-squidTeal bg-clip-text text-transparent">
-                            Team
+                            Core Team
                         </span>
                     </h1>
                     <div className="h-1 w-32 mx-auto mt-4 bg-gradient-to-r from-squidPink to-squidTeal rounded-full"></div>
@@ -72,7 +103,7 @@ export default function TeamsPage() {
                             className="bg-black/5 rounded-xl border-[2px] dark:border-squidTeal/50 border-squidPink/50 hover:dark:border-squidPink/50 hover:border-squidTeal/50 transition-colors duration-300 backdrop-blur-lg border-squidPink dark:text-white text-black py-12 cursor-pointer"
                             onClick={() => openModal(team)}
                         >
-                            <div className="relative h-28 w-28 mx-auto mb-4 rounded-full overflow-hidden border-[1px] dark:border-squidTeal border-squidPink">
+                            <div className="relative h-28 w-28 mx-auto mb-4 rounded-full overflow-hidden dark:border-squidTeal border-squidPink">
                                 <Image
                                     src={team.image}
                                     alt={team.name}
@@ -81,14 +112,14 @@ export default function TeamsPage() {
                                 />
                             </div>
                             <h3 className="text-xl font-bold text-center">{team.name}</h3>
-                            <p className="text-squidPink text-center">{team.expertise}</p>
+                            <p className="text-squidPink text-center">{team.designation}</p>
                         </div>
                     ))}
                 </div>
 
                 {/* Modal */}
                 {selectedTeam && (
-                    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+                    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4">
                         <div className="bg-white rounded-lg shadow-lg max-w-3xl w-full p-8 relative">
                             {/* Close Button */}
                             <button
@@ -100,7 +131,7 @@ export default function TeamsPage() {
 
                             <div className="flex items-center gap-6">
                                 {/* Profile Image */}
-                                <div className="relative h-24 w-24 rounded-full overflow-hidden">
+                                <div className="relative md:min-h-24 md:min-w-24 min-h-[100px] min-w-[100px] rounded-full overflow-hidden">
                                     <Image
                                         src={selectedTeam.image}
                                         alt={selectedTeam.name}
@@ -111,21 +142,21 @@ export default function TeamsPage() {
 
                                 {/* Details */}
                                 <div>
-                                    <h3 className="text-2xl font-bold">{selectedTeam.name}</h3>
-                                    <p className="text-gray-600">{selectedTeam.designation}</p>
+                                    <h3 className="md:text-2xl text-md font-bold">{selectedTeam.name}</h3>
+                                    <p className="text-gray-600 text-sm">{selectedTeam.designation} | {selectedTeam.expertise}</p>
                                     <a
-                                        href={selectedTeam.linkedin}
+                                        href={selectedTeam.connect}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="text-blue-500 hover:underline inline-flex items-center mt-2"
+                                        className="text-blue-500 hover:underline inline-flex items-center mt-2 text-sm"
                                     >
-                                        LinkedIn
+                                        Connect
                                     </a>
                                 </div>
                             </div>
 
                             {/* Bio */}
-                            <p className="mt-6 text-gray-700">{selectedTeam.bio}</p>
+                            <p className="mt-6 text-gray-700 text-[16px]">{selectedTeam.bio}</p>
 
                             {/* Close Button at Bottom */}
                             <button

@@ -8,6 +8,7 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion";
 import { PlusCircle } from 'lucide-react';
+import Link from 'next/link';
 
 type FaqItems = {
     question: string;
@@ -15,26 +16,59 @@ type FaqItems = {
 };
 
 const Faqs: FaqItems[] = [{
-    question: "What is the team size",
-    answer: "Team can be of 3-4 members and participants can also join individually"
+    question: "Team Size",
+    answer: "Team size can be of 1-4 members"
+},{
+    question: "Registration Costs?",
+    answer: "Nada"
 }, {
-    question: "What is the team size",
-    answer: "Team can be of 3-4 members and participants can also join individually"
+    question: "Are Inter College Teams allowed?",
+    answer: "Yes, Inter College teams are allowed"
 }, {
-    question: "What is the team size",
-    answer: "Team can be of 3-4 members and participants can also join individually"
+    question: "Will There Be wifi at the Venue?",
+    answer: "Yes, of course (even we can't survive without Internet 😭)"
 }, {
-    question: "What is the team size",
-    answer: "Team can be of 3-4 members and participants can also join individually"
+    question: "Can I participate solo?",
+    answer: "While we encourage participation as a team (as you'll get networking opportunities and it's always fun with friends) you can participate solo"
 }, {
-    question: "What is the team size",
-    answer: "Team can be of 3-4 members and participants can also join individually"
+    question: "Is this Hackathon free?",
+    answer: "You have to just 36 crore, then we'll tell you the answer (jk, it's completely free, we'll never ask for any payment ❤️)"
+}, {
+    question: "whats the duration of the hackathon?",
+    answer: "It's a 24 hour offline hackathon (be prepared to hack all night!)"
+}, {
+    question: "what should I bring offline to hack?",
+    answer: "Bring your laptop, charger, any necessary software tools, and a collaborative spirit."
+}, {
+    question: "It is my first hackathon, what is something I should know?",
+    answer: "Hackathons are not only meant for winning (although that is the goal) but they provide you with so many networking opportunities (our community core members met in hacks too). Win or lose you'll definitely learn something, so come from a learning mindset and you will have fun along the way (we promise 😁)"
+}, {
+    question: "Will there be enough charging ports available?",
+    answer: "We will definitely ensure the availability of charging ports for every team (we've been to enough hacks and we know how that can be a problem 😚)"
+}, {
+    question: "I'm a beginner, should I apply?",
+    answer: "Most definitely, we cannot emphasise how necessary this kind of exposure is. Just make sure you have a good linkedin profile and GitHub"
+}, {
+    question: "Do I need to bring food, snacks and all?",
+    answer: "Nahh, we're your hosts for the duration of the hack, all food and snacks will be on us!"
+}, {
+    question: "where can I find the details like problem statement, judges and schedule?",
+    answer: "You can check the codekshetra website or the devfolio sections"
+}, {
+    question: "I've already applied but my application status is still pending",
+    answer: "Be patient, we've got so many registrations, we are still in the process of accepting teams, just hold on for some time"
+}, {
+    question: "Is hackathon open for all domain?",
+    answer: "Yes, just come over and build anything you want! (There'll be separate problem statements too for extra points)"
+}, {
+    question: "will our travel expenses be covered?",
+    answer: "While we wish we could cover all of you guy's travel expenses, we cannot reimburse for travel costs. Food and accommodation is on us for the duration of the hack 😊"
 }];
 
 const CustomAccordionTrigger = React.forwardRef((props: any, ref: any) => (
   <AccordionTrigger 
     {...props}
-    className="group flex justify-between items-center py-6 px-4 w-full hover:no-underline"
+    className="group flex justify-between items-center py-6 px-4 w-full hover:no-underline text-left"
   >
     <div className="flex items-center gap-4">
       <div className="flex-shrink-0">
@@ -102,6 +136,9 @@ export default function FaqsPage() {
                             </div>
                         </div>
                     ))}
+                </div>
+                <div className='dark:text-white text-black text-center py-12'>
+                    <p>Got more Questions? Reach Out to <Link href='/contact' className='text-squidPink'>VIPs</Link></p>
                 </div>
             </main>
         </div>

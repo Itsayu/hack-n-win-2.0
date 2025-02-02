@@ -36,11 +36,11 @@ export default function Navbar() {
     href: "/profile-badge",
     title: "Get Profile Badge"
   }, {
-    href: "/contact",
-    title: "Contact"
-  }, {
     href: "/faqs",
     title: "FAQs"
+  }, {
+    href: "/contact",
+    title: "Contact"
   }];
 
   return (

@@ -17,7 +17,7 @@ type FaqItems = {
 
 const Faqs: FaqItems[] = [{
     question: "Team Size",
-    answer: "Team size can be of 1-4 members"
+    answer: "Team size can be of 2-4 members"
 },{
     question: "Registration Costs?",
     answer: "Nada"

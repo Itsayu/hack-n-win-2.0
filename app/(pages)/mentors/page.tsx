@@ -11,7 +11,7 @@ const mentors: Mentor[] = [
     designation: "software Engineer at Google",
     bio: "Frontman is a software Engineer by profession having 4+ years of experience in the corporate field. Learning new technology and implementing them is his goal. Along with his daily life, he also tries to give back to society by sharing information with peers.",
     image: "/mentors/frontman.jpg",
-    linkedin: "https://linkedin.com/in/Frontman"
+    connect: "https://linkedin.com/in/Frontman"
   },
   // Add more mentors as needed
 ];
@@ -84,7 +84,7 @@ export default function MentorsPage() {
                 <h3 className="text-2xl font-bold">{selectedMentor.name}</h3>
                 <p className="text-gray-600">{selectedMentor.designation}</p>
                 <a 
-                  href={selectedMentor.linkedin} 
+                  href={selectedMentor.connect} 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-blue-500 hover:underline inline-flex items-center mt-2"

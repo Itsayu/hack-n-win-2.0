@@ -11,7 +11,7 @@ const team: Mentor[] = [
         expertise: "Java developer ",
         designation: "Social Media Team Lead",
         bio: "Java Developer",
-        image: "/team/default.png",
+        image: "/team/dhairya.png",
         connect: "https://www.linkedin.com/in/dhairya-ahuja-1b3b74286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     {
@@ -27,7 +27,7 @@ const team: Mentor[] = [
         expertise: "DSA",
         designation: "Management Lead",
         bio: "Devansh is a passionate and self-motivated individual currently in the final year of graduation, with a strong foundation in Python and experience working with NoSQL databases. Proficient in Python frameworks like Django, with hands-on knowledge of PHP and other backend technologies. Currently serving as the Management Lead at D4 Community, showcasing strong managerial skills and driving initiatives focused on community growth and collaboration. A keen learner with a curiosity to explore and adapt to new technologies, driven to solve problems and build efficient solutions.",
-        image: "/team/default.png",
+        image: "/team/devansh.png",
         connect: "www.linkedin.com/in/devansh-srivastava-95a343204"
     },
     {
@@ -35,7 +35,7 @@ const team: Mentor[] = [
         expertise: "DSA",
         designation: "Social Media Team Lead",
         bio: "A passionate and motivated second-year B.Tech Computer Science student with fundamental skills inprogramming and a keen interest in software engineering, seeking an internship opportunity in Google's STEP program to further develop technical skills and gain hands-on experience in software developm",
-        image: "/team/default.png",
+        image: "/team/bhumika.png",
         connect: "https://www.linkedin.com/in/bhumika-varshney-90ba64295"
     },
     {
@@ -43,7 +43,7 @@ const team: Mentor[] = [
         expertise: "Web Development",
         designation: "Web Dev co-lead",
         bio: "A passionate tech enthusiast skilled in React.js, problem-solving in C++, and exploring the realms of AI and ML.Driven to innovate, learn, and contribute to the tech community through impactful projects and solutions.",
-        image: "/team/default.png",
+        image: "/team/mukul.png",
         connect: "https://www.linkedin.com/in/cloudmukul?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     {
@@ -59,7 +59,7 @@ const team: Mentor[] = [
         expertise: "Web Development",
         designation: "Web Team",
         bio: "I’m Bijjam Madhana Bhargav Reddy, a third-year Computer Science Engineering student at Chandigarh University and a Core Team Member of the D4 Community since September 2023. As a web developer, I specialize in creating user-centric and innovative web solutions using the MERN stack and modern design tools.",
-        image: "/team/default.png",
+        image: "/team/bhargav.png",
         connect: "https://www.linkedin.com/in/bijjam-madhana-bhargav-reddy-087806249"
     },
     {
@@ -67,7 +67,7 @@ const team: Mentor[] = [
         expertise: "",
         designation: "Campus Lead CU",
         bio: "Campus lead of D4 community , CU",
-        image: "/team/default.png",
+        image: "/team/devishi.png",
         connect: "https://www.linkedin.com/in/devishiaggarwal"
     },
     // Add more mentors as needed

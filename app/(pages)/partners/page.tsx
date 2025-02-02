@@ -225,34 +225,29 @@ const partnersData: PartnerSection[] = [
     partners: [
       {
         name: "Platinum 1",
-        logo: "/partners/d4b.png",
-        darkLogo: "/partners/d4w.png",
+        logo: "/partners/appwrite.png",
+        darkLogo: "/partners/appwritew.png",
+        website: "https://example.com",
+      },
+      
+    ],
+  },
+  {
+    title: "Bronze Sponsors",
+    partners: [
+      {
+        name: "MUG Chandigarh",
+        logo: "/partners/mug.jpeg",
+        darkLogo: "/partners/mug.jpeg",
         website: "https://example.com",
       },
       {
-        name: "Platinum 2",
-        logo: "/partners/d4b.png",
-        darkLogo: "/partners/d4w.png",
+        name: "Interview Buddy",
+        logo: "/partners/interviewbuddy.png",
+        darkLogo: "/partners/interviewbuddy.png",
         website: "https://example.com",
       },
-      {
-        name: "Platinum 2",
-        logo: "/partners/d4b.png",
-        darkLogo: "/partners/d4w.png",
-        website: "https://example.com",
-      },
-      {
-        name: "Platinum 2",
-        logo: "/partners/d4b.png",
-        darkLogo: "/partners/d4w.png",
-        website: "https://example.com",
-      },
-      {
-        name: "Platinum 2",
-        logo: "/partners/d4b.png",
-        darkLogo: "/partners/d4w.png",
-        website: "https://example.com",
-      },
+      
     ],
   },
   {
@@ -271,8 +266,8 @@ const partnersData: PartnerSection[] = [
     partners: [
       {
         name: "Devfolio",
-        logo: "/partners/d4b.png",
-        darkLogo: "/partners/d4w.png",
+        logo: "/partners/devfolio.jpeg",
+        darkLogo: "/partners/devfolio.jpeg",
         website: "https://example.com",
       },
     ],
@@ -316,7 +311,7 @@ const PartnerSection = ({ title, partners }: PartnerSection) => (
         {title}
       </span>
     </h2>
-    <div className="flex flex-row flex-wrap justify-center">
+    <div className="flex flex-row flex-wrap justify-center items-center">
       {partners.map((partner, index) => (
         <div
           key={index}

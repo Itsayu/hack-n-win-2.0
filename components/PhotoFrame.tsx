@@ -243,7 +243,7 @@ const PhotoFrame: React.FC = () => {
           <div className={selectedShape === "circle" ? "rounded-full overflow-hidden" : ""}>
             <canvas
               ref={canvasRef}
-              className={`w-full max-w-[80%] mx-auto ${
+              className={`w-full sm:max-w-[80%] mx-auto ${
                 selectedShape === "circle" ? "rounded-full" : "rounded-xl"
               }`}
             />

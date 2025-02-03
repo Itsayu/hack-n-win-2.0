@@ -114,8 +114,8 @@ export default function Home() {
                   : "/hero-logo-black.png"
               }
               alt="Hack-n-Win 2.0"
-              width={isSmallScreen ? 300 : 390}
-              height={isSmallScreen ? 100 : 150}
+              width={330}
+              height={130}
               unoptimized
             />
           </div>
@@ -188,27 +188,16 @@ export default function Home() {
         </div>
 
         {/* Cards Section */}
-        <div className={`grid ${isSmallScreen ? 'grid-cols-1' : isMediumScreen ? 'grid-cols-2' : 'grid-cols-3'} gap-8 py-16`}>
+        <div className="grid grid-cols-1 md:'grid-cols-2' lg:grid-cols-3 gap-8 py-16">
           {cardData.map((card, index) => (
             <div 
               key={index} 
               className="flex"
             >
-              <div className="bg-white/5 backdrop-blur-lg rounded-xl border border-squidTeal/50 p-6 hover:border-squidPink/50 transition-colors duration-300 flex flex-col justify-between w-full">
+              <div className="bg-white/5 backdrop-blur-lg rounded-xl border dark:border-squidTeal/50 border-squidPink/50 p-6 hover:border-squidPink/50 transition-colors duration-300 flex flex-col justify-between w-full">
                 <div>
-                  <div className="flex flex-wrap gap-4 mb-4 md:justify-end">
-                    <div className={`flex items-center space-x-2 ${card.iconColor}`}>
-                      <Clock className="w-5 h-5 animate-pulse" />
-                      <span className="font-mono">{card.time}</span>
-                    </div>
-                    <div className="flex items-center space-x-2 text-squidPink">
-                      <Calendar className="w-5 h-5" />
-                      <span className="font-mono">20/02/2025</span>
-                    </div>
-                  </div>
-                  
                   <div className="space-y-2 md:flex md:flex-col md:items-end">
-                    <div className="inline-block px-3 py-1 rounded-full bg-squidTeal/20 text-squidTeal text-sm font-medium">
+                    <div className="inline-block px-3 py-1 rounded-full dark:bg-squidTeal/20 dark:text-squidTeal bg-squidPink/20 text-squidPink text-sm font-medium">
                       {card.category}
                     </div>
                     <h3 className="text-2xl font-bold text-squidPink transition-colors duration-300">
@@ -217,7 +206,7 @@ export default function Home() {
                   </div>
                   
                   <div className="mt-4">
-                    <p className="text-gray-300 leading-relaxed">
+                    <p className="text-black dark:text-white leading-relaxed">
                       {card.description}
                     </p>
                   </div>
@@ -228,7 +217,7 @@ export default function Home() {
                     href={card.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center space-x-2 text-squidTeal hover:text-squidPink transition-colors"
+                    className="inline-flex items-center space-x-2 dark:text-squidTeal text-blue-600 hover:text-squidPink transition-colors"
                   >
                     <card.icon className="w-5 h-5" />
                     <span>{card.linkText}</span>

@@ -58,8 +58,8 @@ const team: Mentor[] = [
         name: "Qazi Zaid",
         expertise: "Graphic Designing",
         designation: "Graphic Team Lead",
-        bio: "A passionate tech enthusiast skilled in React.js, problem-solving in C++, and exploring the realms of AI and ML.Driven to innovate, learn, and contribute to the tech community through impactful projects and solutions.",
-        image: "/team/default.png",
+        bio: "Graphic Designing Lead @D4 Community | Student Ambassador @ The Esports Club (TEC) | Campus Ambassador @HackwithIndia | UI/UX Designer | Web Developer | Tech Enthusiast | CSE'27",
+        image: "/team/zaid.png",
         connect: "https://www.linkedin.com/in/qazi-zaid/"
     },
     {

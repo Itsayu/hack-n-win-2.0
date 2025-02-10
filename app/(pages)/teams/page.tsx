@@ -28,7 +28,7 @@ const team: Mentor[] = [
         designation: "Management Lead",
         bio: "Devansh is a passionate and self-motivated individual currently in the final year of graduation, with a strong foundation in Python and experience working with NoSQL databases. Proficient in Python frameworks like Django, with hands-on knowledge of PHP and other backend technologies. Currently serving as the Management Lead at D4 Community, showcasing strong managerial skills and driving initiatives focused on community growth and collaboration. A keen learner with a curiosity to explore and adapt to new technologies, driven to solve problems and build efficient solutions.",
         image: "/team/devansh.png",
-        connect: "www.linkedin.com/in/devansh-srivastava-95a343204/"
+        connect: "https://www.linkedin.com/in/devansh-srivastava-95a343204/"
     },
     {
         name: "Devishi Aggarwal ",
